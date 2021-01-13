@@ -60,7 +60,14 @@
 <script>
 export default {
   data() {
+    return{
+      isClass: false
+    };
+  },
+  methods: {
+    hemburger: () {
     this.isClass = !this.isClass;
+   }
   }
 };
 </script>
@@ -131,15 +138,28 @@ export default {
   }
 
   #hamburger span:nth-of-type(1) {
+    top: 10px;
+  }
+  #hamburger span:nth-of-type(2) {
+    top: 20px;
+  }
+  #hamburger span:nth-of-type(3) {
+    top: 30px;
+  }
+  .header-nav {
+    display: none;
+  }
+
+  #hamburger.active span:nth-of-type(1) {
     top: 10px; /*ハンバーガーメニューの一本目の棒*/
     transform: rotate(45deg);
   }
 
-  #hamburger span:nth-of-type(2) {
+  #hamburger.active span:nth-of-type(2) {
     opacity: 0;
   }
 
-  #hamburger span:nth-of-type(3){
+  #hamburger.active span:nth-of-type(3){
     top: 20px;
     transform: rotate(-45deg);
   }
@@ -181,8 +201,5 @@ export default {
     left: 0;
   }
 
-  .header-nav{
-    display: none; /*デスクトップのナビを消す*/
-  }
 }
 </style>
