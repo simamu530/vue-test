@@ -65,7 +65,7 @@ export default {
     };
   },
   methods: {
-    hemburger: () {
+    hemburger() {
     this.isClass = !this.isClass;
    }
   }
