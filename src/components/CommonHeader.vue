@@ -105,15 +105,15 @@ export default {
   color: #fff;
 }
 
-/* #firstview {
+ #firstview {
   height: 100%;
   background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-} */
+} 
 
-/* .catchcopy {
+ .catchcopy {
   position: absolute;
   top: 60%;
   left: 10%;
@@ -122,7 +122,7 @@ export default {
   font-weight: bold;
   color: #fff;
   line-height: 1;
-} */
+}
 
 @media screen and (max-width: 768px) {
 #hamburger {
@@ -174,13 +174,13 @@ export default {
 
   .menu-content {
     display: block;
-    width: calc(100% - 80px);
+    width:calc(100% - 80px);
     height: 100%;
     text-align: center;
     transition: 0.2s;
     position: fixed;
     top: 0;
-    left: calc(-100% - 80px);
+    left:calc(-100% - 80px);
     background: #fff;
     color: #333333;
     box-shadow: 80px 0 rgba(38, 98, 213, 0.3);

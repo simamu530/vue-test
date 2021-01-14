@@ -409,7 +409,7 @@ body {
   position: relative;
   background: #000;
   margin-bottom: 10%;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .mission-content {
