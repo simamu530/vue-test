@@ -75,8 +75,13 @@ export default {
 <style scoped>
 #top-header {
   height: 70px;
-  line-height: 70px;
   background: rgba(0, 0, 0, 1);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
@@ -87,8 +92,11 @@ export default {
   line-height: 70px;
 }
 
+.header-nav ul {
+  display: flex;
+}
+
 .header-nav li {
-  display: inline-block;
   margin-right: 35px;
   font-size: 16px;
 }
@@ -97,15 +105,15 @@ export default {
   color: #fff;
 }
 
-#firstview {
+/* #firstview {
   height: 100%;
   background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-}
+} */
 
-.catchcopy {
+/* .catchcopy {
   position: absolute;
   top: 60%;
   left: 10%;
@@ -114,7 +122,7 @@ export default {
   font-weight: bold;
   color: #fff;
   line-height: 1;
-}
+} */
 
 @media screen and (max-width: 768px) {
 #hamburger {
@@ -151,7 +159,7 @@ export default {
   }
 
   #hamburger.active span:nth-of-type(1) {
-    top: 10px; /*ハンバーガーメニューの一本目の棒*/
+    top: 20px; /*ハンバーガーメニューの一本目の棒*/
     transform: rotate(45deg);
   }
 
@@ -164,7 +172,7 @@ export default {
     transform: rotate(-45deg);
   }
 
-  .menu-content{
+  .menu-content {
     display: block;
     width: calc(100% - 80px);
     height: 100%;
